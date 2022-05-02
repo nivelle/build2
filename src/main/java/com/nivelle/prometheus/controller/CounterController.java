@@ -1,5 +1,6 @@
-package com.nivelle.prometheus;
+package com.nivelle.prometheus.controller;
 
+import com.nivelle.prometheus.JobMetrics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
