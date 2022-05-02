@@ -1,6 +1,7 @@
 package com.nivelle.prometheus;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HeartController {
 
-    @RequestMapping("/heart")
+    @RequestMapping(value = "/heart",method = RequestMethod.GET)
     public String heart(String a) {
         return "hello heart:" + a;
     }
