@@ -32,16 +32,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-actuator-autoconfigure</artifactId>
-            <version>2.3.4.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>io.micrometer</groupId>
-            <artifactId>micrometer-core</artifactId>
-            <version>1.5.5</version>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -73,7 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.demo.DemoApplication</mainClass>
+                    <mainClass>com.nivelle.prometheus.PrometheusApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
