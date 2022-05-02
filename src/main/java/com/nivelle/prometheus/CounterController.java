@@ -32,6 +32,8 @@ public class CounterController {
         System.out.println("gauge controller x"+x);
         jobMetrics.map.put("x",Double.valueOf(x));
     }
+
+
 }
 
 
