@@ -15,9 +15,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HeartController {
 
-    @RequestMapping(value = "/heart",method = RequestMethod.GET)
+    @RequestMapping(value = "/heart", method = RequestMethod.GET)
     @ResponseBody
     public String heart(String a) {
         return "hello heart:" + a;
     }
+
+    @RequestMapping(value = "/encrypt", method = RequestMethod.GET)
+    @ResponseBody
+    public String encrypt(String pasword) {
+        if (pasword.equals("nivelle")) {
+            int pwd = 881224 + 911020;
+            return String.valueOf(pwd);
+        } else {
+            return "fuck ";
+        }
+    }
+
 }
