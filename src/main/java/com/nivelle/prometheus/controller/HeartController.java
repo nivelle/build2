@@ -21,6 +21,13 @@ public class HeartController {
         return "hello heart:" + a;
     }
 
+    /**
+     * http://39.105.201.242/api/encrypt?pasword=nivelle
+     *
+     * nginx配置   /etc/nginx/nginx.conf
+     * @param pasword
+     * @return
+     */
     @RequestMapping(value = "/encrypt", method = RequestMethod.GET)
     @ResponseBody
     public String encrypt(String pasword) {
