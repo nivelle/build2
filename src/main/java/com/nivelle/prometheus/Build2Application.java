@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class PrometheusApplication {
+public class Build2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(PrometheusApplication.class, args);
+        SpringApplication.run(Build2Application.class, args);
     }
 
     @Bean
