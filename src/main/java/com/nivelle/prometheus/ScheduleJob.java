@@ -1,7 +1,6 @@
 package com.nivelle.prometheus;
 
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -38,8 +37,8 @@ public class ScheduleJob {
         ExecutorService pool = Executors.newFixedThreadPool(5);
         for (int i = 0; i < 30; i++) {
             try {
-                pool.execute(new Task(String.valueOf(i),lock));
-            }catch (Exception e){
+                pool.execute(new Task(String.valueOf(i), lock));
+            } catch (Exception e) {
 
             }
         }
